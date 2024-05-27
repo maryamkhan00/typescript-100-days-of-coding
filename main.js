@@ -221,12 +221,14 @@ console.log("does foods include burrito?: " + foods.includes("burrito")); //fals
 assign it a value of 'green', 'yellow', or 'red'. Write an if statement to test whether the alien’s color is green.
 If it is, print a message that the player just earned 5 points. Write one version of this program that passes the
 if test and another that fails. (The version that fails will have no output.)*/
-let alien_color = "green";
+let alien_color = "red";
 if (alien_color == "green") {
     console.log("you just earned 5 points!");
 }
 ;
-if (alien_color == "red") {
+alien_color = "green";
+if (alien_color == "green") {
+    console.log("you just earned 5 points!");
 }
 ;
 /* Q26) Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
@@ -309,3 +311,41 @@ else if (age >= 20 && age < 65) {
     console.log("that's an adult");
 }
 ;
+/* Q29) Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that
+check for certain fruits in your array. Make a array of your three favorite fruits and call it favorite_fruits. Write five
+if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if
+block should print a statement, such as You really like bananas! */
+let favorite_fruits = ["strawberry", "kiwi", "orange"];
+if (favorite_fruits.includes("strawberry")) {
+    console.log("i love strawberries");
+}
+;
+if (favorite_fruits.includes("cherry")) {
+    console.log("cherries are a winter fruit");
+}
+;
+if (favorite_fruits.includes("kiwi")) {
+    console.log("kiwis are sour");
+}
+;
+if (favorite_fruits.includes("apple")) {
+    console.log("an apple a day keeps the doctor away");
+}
+;
+if (favorite_fruits.includes("orange")) {
+    console.log("orange juice is tangy yet refreshing at the same time");
+}
+;
+/* Q30) Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code
+that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to
+each user: If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status
+report? Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.*/
+let user = ["admin", "ted", "alex", "jake", "ben"];
+user.forEach(user => {
+    if (user === "admin") {
+        console.log("Hello admin, would you like to see a status report?");
+    }
+    else {
+        console.log(`Hello ${user}, thank you for logging in again.`);
+    }
+});

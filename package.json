@@ -1,0 +1,15 @@
+{
+  "name": "ts-100-days-of-coding-challenge",
+  "version": "1.0.0",
+  "description": "this code includes 100 days of coding challenge assignments which also includes the 45 assignments questions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "maryam khan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.7"
+  }
+}
